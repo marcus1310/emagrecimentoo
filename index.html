@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perca Peso Rápido e com Segurança!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 25px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .cta-button:hover {
+            background-color: #d84315;
+            transform: scale(1.1);
+        }
+        .highlight {
+            color: #ff5733;
+            font-weight: bold;
+        }
+        .testimonials, .faq, .lead-capture {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .countdown {
+            font-size: 24px;
+            color: #ff5733;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #d84315;
+        }
+    </style>
+    <script>
+        function startCountdown() {
+            let countdownElement = document.getElementById("countdown");
+            let timeLeft = 10 * 60; // 10 minutos
+            setInterval(() => {
+                if (timeLeft <= 0) {
+                    countdownElement.innerHTML = "Oferta Expirada!";
+                    return;
+                }
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                countdownElement.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timeLeft--;
+            }, 1000);
+        }
+        window.onload = startCountdown;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Descubra o Segredo para Emagrecer Rápido e Sem Sofrimento! 🔥</h1>
+        <p><span class="highlight">Chega de dietas que não funcionam!</span> Perca peso naturalmente e tenha o corpo dos seus sonhos!</p>
+        <img src="https://via.placeholder.com/500x300" alt="Antes e Depois">
+        <h2>O Que Você Vai Ganhar?</h2>
+        <ul style="text-align: left;">
+            <li>✅ Resultados comprovados em poucos dias</li>
+            <li>✅ Sem precisar passar fome ou fazer exercícios exaustivos</li>
+            <li>✅ Fórmula 100% natural e segura, sem efeitos colaterais</li>
+            <li>✅ Suporte exclusivo para sua jornada de emagrecimento</li>
+        </ul>
+        <p class="countdown">Oferta termina em: <span id="countdown"></span></p>
+        <a href="#" class="cta-button">Quero Emagrecer Agora!</a>
+        <p><small>⚠️ Promoção especial: apenas <span class="highlight">hoje</span> com 50% de desconto!</small></p>
+        
+        <div class="testimonials">
+            <h2>💬 O Que Nossos Clientes Dizem?</h2>
+            <p>"Perdi 10kg em 30 dias sem sofrimento! Melhor decisão que já tomei!" - <b>Carla M.</b></p>
+            <p>"Meu corpo mudou completamente! Recomendo para todos!" - <b>Lucas P.</b></p>
+        </div>
+        
+        <div class="faq">
+            <h2>❓ Perguntas Frequentes</h2>
+            <h3>✔️ O produto é seguro?</h3>
+            <p>Sim! Nossa fórmula é 100% natural e aprovada por especialistas.</p>
+            
+            <h3>✔️ Em quanto tempo vejo resultados?</h3>
+            <p>Muitos clientes notam mudanças já na primeira semana!</p>
+        </div>
+
+        <div class="lead-capture">
+            <h2>🔒 Receba um Bônus Exclusivo!</h2>
+            <p>Insira seu e-mail abaixo e receba um guia grátis com dicas para emagrecer ainda mais rápido!</p>
+            <form>
+                <input type="email" placeholder="Digite seu e-mail" required>
+                <button type="submit" class="cta-button">Receber Agora</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
